@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Navigation } from './components/navigation/navigation.component';
+import { Welcome } from './components/welcome/welcome.component';
+import { Carasoul } from './components/carasoul/carasoul.component';
+import { Features } from './components/features/features.component';
+import { Events } from './components/events/events.component';
+import { Footer } from './components/footer/footer.component';
+import { useState } from 'react';
+import { Moto } from './components/moto/moto.component';
 function App() {
+  const [ok , setOk] = useState(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navigation/>
+      <Carasoul/>
+      {!ok ? <>
+      <Features/>
+      <Moto/>
+      <Events/>
+      <Footer/>
+      </> : null}
+      {ok ? <Welcome setOk={setOk}/> : null}
+    </>
   );
 }
 
