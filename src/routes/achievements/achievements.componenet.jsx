@@ -1,27 +1,38 @@
 import Paper from "../../assets/paper.jpg";
+import { Card } from "../../components/card/card.component";
+import { Section } from "../../components/section/section.component";
 export const Achievements = () => {
-   return ( 
-      <div className='w-full h-full'>
-         <div className="h-86 mx-20 bg-contain " style={{ backgroundImage: `url(${Paper})`}}>
-            <div className="h-14 flex justify-center items-center gap-2 ">
-               <button className="w-24 h-full outline-none bg-[#f3f3f3] transition-all delay-75 duration-150 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none hover:scale-105">SSC</button>
-               <button className="w-24 h-full outline-none bg-[#f3f3f3] transition-all delay-75 duration-150 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none hover:scale-105">NTSE</button>
-               <button className="w-24 h-full outline-none bg-[#f3f3f3] transition-all delay-75 duration-150 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none hover:scale-105">MTSE</button>
-               <button className="w-24 h-full outline-none bg-[#f3f3f3] transition-all delay-75 duration-150 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none hover:scale-105">Scholarship</button>
-               <button className="w-24 h-full outline-none bg-[#f3f3f3] transition-all delay-75 duration-150 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none hover:scale-105">Other</button>
-            </div>
-            <div className="mt-2 w-full h-84 flex justify-center gap-32 ">
-               <div className="my-5 w-[270px] h-[320px] bg-[#c5c4c4] flex flex-col justify-end border-[#c2c2c2] border-solid border-[1px]">
-                  <div className="w-full h-14 bg-[#f3f3f3]"></div>
-               </div>
-               <div className="my-5 w-[270px] h-[320px] bg-[#c5c4c4] flex flex-col justify-end border-[#c2c2c2] border-solid border-[1px]">
-                  <div className="w-full h-14 bg-[#f3f3f3]"></div>
-               </div>
-               <div className="my-5 w-[270px] h-[320px] bg-[#c5c4c4] flex flex-col justify-end border-[#c2c2c2] border-solid border-[1px]">
-                  <div className="w-full h-14 bg-[#f3f3f3]"></div>
-               </div>
-            </div>
-         </div>
+  return (
+    <>
+      <div
+        style={{ backgroundImage: `url()` }}
+        className="flex items-end justify-start w-full h-32 px-20 mt-24"
+      >
+        <div className="flex items-end justify-between w-full h-full py-3 mb-3">
+          <span className="text-3xl font-bold tracking-wider text-red-300 heading">
+            Achievements
+          </span>
+          <div className="flex gap-1 text-xs font-semibold heading ">
+            <Section>SSC</Section>
+            <Section>NTSE</Section>
+            <Section>MTSE</Section>
+            <Section>Scholarship</Section>
+            <Section>Other</Section>
+          </div>
+        </div>
       </div>
-   )
+      <div className="w-full h-full px-20 ">
+        <div className="bg-contain h-86 " style={{ backgroundImage: `url()` }}>
+          <div className="flex flex-wrap justify-center w-full gap-20 py-12 h-84 ">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };

@@ -26,27 +26,121 @@ code {
     monospace;
 }
 
-.box-animation {
-  animation: box 20s infinite;
+.pensile-animation {
+  animation: pensile 15s infinite;
+}
+.pensile2-animation {
+  animation: pensile2 15s infinite;
 }
 
-@keyframes box {
+@keyframes pensile {
+  0%{
+    top:400px;
+    left:1200px;
+  }
+  50%{
+    top:1000px;
+    left:200px;
+  }
+  100%{
+    top:400px;
+    left:1200px;
+  }
+}
+@keyframes pensile2 {
+  0%{
+    top:-300px;
+    left:800px;
+  }
+  50%{
+    top: 100px;
+    left:90px;
+  }
+  100%{
+    top:-300px;
+    left:800px;
+  }
+}
+.bag-animation {
+  animation: bag 15s infinite;
+}
+
+@keyframes bag {
+  0%{
+    top: 80px;
+    left:1100px;
+  }
+  50%{
+    top:350px;
+    left:100px;
+  }
+  100%{
+    top: 80px;
+    left:1100px;
+  }
+}
+.caryons-animation {
+  animation: caryons 15s infinite;
+}
+.caryons2-animation {
+  animation: caryons2 15s infinite;
+}
+
+
+@keyframes caryons {
+  0%{
+    top:400px;
+    left:200px;
+  }
+  50%{
+    top:1000px;
+    left:1200px;
+  }
+  100%{
+    top:400px;
+    left:200px;
+  }
+}
+@keyframes caryons2 {
+  0%{
+    top:1000px;
+    left:1800px;
+  }
+  50%{
+    top:50px;
+    left:1100px;
+  }
+  100%{
+    top:1000px;
+    left:1800px;
+  }
+}
+.supplies-animation {
+  animation: supplies 15s infinite;
+}
+
+@keyframes supplies {
   0%{
     top: 0px;
-    left:-80px;
+    left:80px;
   }
   50%{
     top:400px;
-    left: 1400px;
+    left:1100px;
   }
   100%{
     top: 0px;
-    left:-50px;
+    left:80px;
   }
 }
 
 .cheveron {
+  /* background-image: linear-gradient(to right top, #00adef, #7593f9, #cb67d6, #fa2489, #f31c23); */
   animation: chev 1s forwards;
+}
+
+.heading {
+  animation: heading-intro 1s 25ms forwards;
 }
 
 @keyframes chev {
@@ -59,3 +153,45 @@ code {
     right: 3.5  rem;
   }
 }
+
+@keyframes heading-intro {
+  from {
+    opacity: 0;
+    transform: translateX(-6rem)
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* @keyframes color-anim { */
+  /* 0% {
+    background-color: #00ADEF;
+  }
+  20% {
+    background-color: #00ADEF;
+  }
+  40% {
+    background-color: #00A650;
+  }
+  60% {
+    background-color: #00A650;
+  }
+  80% {
+    background-color: #F31C23;
+  }
+  100% {
+    background-color: #F31C23;
+  }
+} */
+
+/* @keyframes color-anim {
+  from {
+    background-image: linear-gradient(to right top, #00adef, #00b0df, #00b2c7, #00b0a8, #00ad88, #2aa866, #4aa23f, #679900, #908b00, #b67600, #d85700, #f31c23);
+  }
+
+  to {
+    background-image: radial-gradient(circle, #00adef, #00b0df, #00b2c7, #00b0a8, #00ad88, #2aa866, #4aa23f, #679900, #908b00, #b67600, #d85700, #f31c23);
+  }
+} */
