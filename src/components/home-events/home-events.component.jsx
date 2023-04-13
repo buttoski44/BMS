@@ -1,5 +1,5 @@
 import { Event } from "../event/event.component";
-import Background from "../../assets/bg-pattern.svg";
+
 export const HomeEvents = () => {
   return (
     <div

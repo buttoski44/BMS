@@ -1,4 +1,3 @@
-import Paper from "../../assets/paper.jpg";
 import { Card } from "../../components/card/card.component";
 import { Section } from "../../components/section/section.component";
 export const Achievements = () => {

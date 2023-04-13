@@ -1,9 +1,8 @@
-import Texture from "../../assets/dark-wood.jpg";
 export const Features = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${Texture})`,
+        backgroundImage: `url()`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "auto",
       }}

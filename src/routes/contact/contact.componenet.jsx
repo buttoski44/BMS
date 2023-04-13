@@ -1,10 +1,9 @@
 import { GoogleMap } from "../../components/google-map/google-map.component";
-import Background from "../../assets/carasoule-back.svg";
 
 export const Contact = () => {
   return (
     <div
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{ backgroundImage: `url()` }}
       className="mt-5 mx-20 p-5 bg-[#f3f3f3]"
     >
       <div className="flex justify-center my-5">
