@@ -33,7 +33,7 @@ export const Home = ({ ok }) => {
       <Carasoul />
       {!ok && (
         <>
-          {/* <Features /> */}
+          <Features />
           <Moto onScroll={() => setScrol(!scrol)} />
           <HomeEvents />
           <Footer />

@@ -21,7 +21,7 @@ export const Achievements = () => {
         </div>
       </div>
       <div className="w-full h-full px-20 ">
-        <div className="bg-contain h-86 " style={{ backgroundImage: `url()` }}>
+        <div className="bg-contain h-86 ">
           <div className="flex flex-wrap justify-center w-full gap-20 py-12 h-84 ">
             <Card />
             <Card />

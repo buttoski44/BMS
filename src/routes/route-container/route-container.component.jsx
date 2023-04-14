@@ -15,30 +15,11 @@ export const RouteContainer = () => {
       return <Achievements />;
 
     case "contact":
-      return (
-        <>
-          <div
-            style={{ backgroundImage: `url()` }}
-            className="px-20 w-full h-32 mt-24 bg-[#F31C23] flex items-end justify-start"
-          >
-            <span className="py-5 mb-3 text-4xl font-bold tracking-wider text-black heading ">
-              Contact
-            </span>
-          </div>
-          <Contact />
-        </>
-      );
+      return <Contact />;
+
     case "about":
       return (
         <>
-          <div
-            style={{ backgroundImage: `url()` }}
-            className="px-20 w-full h-32 mt-24 bg-[#F31C23] flex items-end justify-start"
-          >
-            <span className="py-5 mb-3 text-4xl font-bold tracking-wider text-black heading ">
-              About
-            </span>
-          </div>
           <About />
         </>
       );
