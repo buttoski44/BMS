@@ -3,13 +3,17 @@ import { Contact } from "../contact/contact.componenet";
 import { About } from "../about/about.componenet";
 import { useParams } from "react-router-dom";
 import { Events } from "../events/events.componenet";
-
+import { AnimatePresence } from "framer-motion";
 export const RouteContainer = () => {
   const { nav } = useParams();
 
   switch (nav) {
     case "events":
-      return <Events />;
+      return (
+        <AnimatePresence>
+          <Events />
+        </AnimatePresence>
+      );
 
     case "achiev":
       return <Achievements />;
@@ -18,11 +22,7 @@ export const RouteContainer = () => {
       return <Contact />;
 
     case "about":
-      return (
-        <>
-          <About />
-        </>
-      );
+      return <About />;
 
     default:
       return null;

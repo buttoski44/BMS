@@ -5,7 +5,7 @@ import { HomeEvents } from "../../components/home-events/home-events.component";
 import { Footer } from "../../components/footer/footer.component";
 import Cheveron from "../../assets/chevron.png";
 import { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 export const Home = ({ ok }) => {
   const [scrol, setScrol] = useState(false);
 
@@ -29,7 +29,11 @@ export const Home = ({ ok }) => {
     });
   };
   return (
-    <>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Carasoul />
       {!ok && (
         <>
@@ -46,6 +50,6 @@ export const Home = ({ ok }) => {
           )}
         </>
       )}
-    </>
+    </motion.section>
   );
 };

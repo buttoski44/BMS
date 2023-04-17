@@ -1,11 +1,12 @@
 import { GoogleMap } from "../../components/google-map/google-map.component";
-
+import { motion } from "framer-motion";
 export const Contact = () => {
   return (
-    <div>
+    <motion.section initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }} transition={{ duration: 2 }}>
       <div
         style={{ backgroundImage: `url()` }}
-        className="px-20 w-full h-32 mt-24 flex items-end justify-start"
+        className="flex items-end justify-start w-full h-32 px-20 mt-24"
       >
         <span className="py-5 mb-3 text-4xl font-bold tracking-wider text-red-300 heading ">
           Contact
@@ -20,14 +21,14 @@ export const Contact = () => {
             <div className="text-lg font-medium tracking-wider">
               Email:
               <br />
-              <p className="text-base mb-5 font-normal tracking-normal">
+              <p className="mb-5 text-base font-normal tracking-normal">
                 BMS1976@gmail.com
               </p>
             </div>
             <div className="text-lg font-medium tracking-wider">
               Tele No.
               <br />
-              <p className="text-base mb-5 font-normal tracking-normal">
+              <p className="mb-5 text-base font-normal tracking-normal">
                 +2145-50987
               </p>
             </div>
@@ -36,7 +37,7 @@ export const Contact = () => {
             <div className="text-lg font-medium tracking-wider">
               Address:
               <br />
-              <p className="text-base mb-5 font-normal tracking-normal">
+              <p className="mb-5 text-base font-normal tracking-normal">
                 Plot NO.110. ,Near Colagate company,
                 <br /> bajananagar, Aurangabad.
               </p>
@@ -45,6 +46,6 @@ export const Contact = () => {
           <GoogleMap />
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };

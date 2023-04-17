@@ -14,10 +14,10 @@ export const Carasoul = () => {
       className="w-full h-[calc(100vh-6rem)] mt-24 bg-[#00ADEF] flex justify-center items-center  overflow-hidden relative -z-20"
     >
       <div className="w-[683px] h-96 mt-12 bg-white shadow-2xl rounded-xl flex items-end justify-center">
-        <div className="p-3 m-2">
+        <div className=" p-3 m-2">
           <button className="w-3 h-3 mx-1 bg-[#00ADEF] rounded-[50%]" />
-          <button className="w-3 h-3 mx-1 bg-[#00ADEF] rounded-[50%]" />
-          <button className="w-3 h-3 mx-1 bg-[#00ADEF] rounded-[50%]" />
+          <button className="w-3 h-3 mx-1 bg-blue-200 rounded-[50%]" />
+          <button className="w-3 h-3 mx-1 bg-blue-200 rounded-[50%]" />
         </div>
       </div>
       <img

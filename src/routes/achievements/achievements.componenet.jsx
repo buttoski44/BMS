@@ -1,8 +1,13 @@
 import { Card } from "../../components/card/card.component";
 import { Section } from "../../components/section/section.component";
+import { motion } from "framer-motion";
 export const Achievements = () => {
   return (
-    <>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+    >
       <div
         style={{ backgroundImage: `url()` }}
         className="flex items-end justify-start w-full h-32 px-20 mt-24"
@@ -32,6 +37,6 @@ export const Achievements = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.section>
   );
 };

@@ -16,28 +16,28 @@ export const Navigation = () => {
             Bhagwan Mahavir School
           </span>
         </div>
-        <div className="flex mx-10 my-4">
+        <div className="flex gap-2 mx-10 my-4">
           <NavLink
             to="/events"
-            className="mx-2 px-4 py-4 text-lg text-[#8b8b8b] font-medium transition-[box-shadow,background-color,border-radius,border-style] delay-75 duration-275 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none focus:bg-[#fcfcfc] hidden sm:block "
+            className=" px-4 py-4 text-lg text-[#8b8b8b] font-medium transition-[box-shadow,background-color,border-radius,border-style] delay-75 duration-275 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none focus:bg-[#fcfcfc] hidden sm:block "
           >
             Events
           </NavLink>
           <NavLink
             to="/achiev"
-            className="mx-2 px-4 py-4 text-lg text-[#8b8b8b] font-medium transition-[box-shadow,background-color,border-radius,border-style] delay-75 duration-275 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none focus:bg-[#fcfcfc] hidden sm:block"
+            className=" px-4 py-4 text-lg text-[#8b8b8b] font-medium transition-[box-shadow,background-color,border-radius,border-style] delay-75 duration-275 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none focus:bg-[#fcfcfc] hidden sm:block"
           >
             Achievement
           </NavLink>
           <NavLink
             to="/contact"
-            className="mx-2 px-4 py-4 text-lg text-[#8b8b8b] font-medium transition-[box-shadow,background-color,border-radius,border-style] delay-75 duration-275 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none focus:bg-[#fcfcfc] hidden sm:block"
+            className=" px-4 py-4 text-lg text-[#8b8b8b] font-medium transition-[box-shadow,background-color,border-radius,border-style] delay-75 duration-275 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none focus:bg-[#fcfcfc] hidden sm:block"
           >
             Contact
           </NavLink>
           <NavLink
             to="/about"
-            className="mx-2 px-4 py-4 text-lg text-[#8b8b8b] font-medium transition-[box-shadow,background-color,border-radius,border-style] delay-75 duration-275 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none focus:bg-[#fcfcfc] hidden sm:block"
+            className=" px-4 py-4 text-lg text-[#8b8b8b] font-medium transition-[box-shadow,background-color,border-radius,border-style] delay-75 duration-275 ease-in hover:cursor-pointer hover:bg-[#e4e2e2] hover:rounded-md  hover:shadow-2xl hover:border-none focus:bg-[#fcfcfc] hidden sm:block"
           >
             About
           </NavLink>
