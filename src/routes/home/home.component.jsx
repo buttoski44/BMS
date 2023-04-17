@@ -6,6 +6,7 @@ import { Footer } from "../../components/footer/footer.component";
 import Cheveron from "../../assets/chevron.png";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 export const Home = ({ ok }) => {
   const [scrol, setScrol] = useState(false);
 
@@ -41,13 +42,19 @@ export const Home = ({ ok }) => {
           <Moto onScroll={() => setScrol(!scrol)} />
           <HomeEvents />
           <Footer />
-          {scrol && (
-            <img
-              src={Cheveron}
-              onClick={handlOnClick}
-              className="w-10 h-10 p-3 fixed bottom-20 bg-white right-14 shadow-xl rounded-[50%] cheveron hover:cursor-pointer"
-            />
-          )}
+          <AnimatePresence>
+            {scrol && (
+              <motion.img
+                key="cheveron"
+                initial={{ opacity: 0, y: 110 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, x: 110 }}
+                src={Cheveron}
+                onClick={handlOnClick}
+                className="w-10 h-10 p-3 fixed bottom-20 bg-white right-14 shadow-xl rounded-[50%] hover:cursor-pointer"
+              />
+            )}
+          </AnimatePresence>
         </>
       )}
     </motion.section>

@@ -10,19 +10,31 @@ export const RouteContainer = () => {
   switch (nav) {
     case "events":
       return (
-        <AnimatePresence>
-          <Events />
+        <AnimatePresence mode="wait">
+          <Events key="event" />
         </AnimatePresence>
       );
 
     case "achiev":
-      return <Achievements />;
+      return (
+        <AnimatePresence mode="wait">
+          <Achievements key="achive" />
+        </AnimatePresence>
+      );
 
     case "contact":
-      return <Contact />;
+      return (
+        <AnimatePresence mode="wait">
+          <Contact key="contact" />
+        </AnimatePresence>
+      );
 
     case "about":
-      return <About />;
+      return (
+        <AnimatePresence mode="wait">
+          <About key="about" />
+        </AnimatePresence>
+      );
 
     default:
       return null;

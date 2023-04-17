@@ -10,7 +10,7 @@ export const Features = () => {
       onMouseLeave={() => setHover(false)}
     >
       <div
-        className={`w-1/2 py-1 px-4 my-5 lg:my-20 h-28 flex justify-center gap-16 items-center bg-white border-4 border-solid border-blue-100 rounded-[30px] duration-300  delay-100 ${
+        className={`w-1/2 py-1 px-4 my-5 lg:my-20 h-28 flex justify-center gap-16 items-center bg-white border-4 border-solid border-blue-100 rounded-[30px] duration-300  delay-300 ${
           hover && "translate-y-16"
         } shadow-xl`}
       >
@@ -44,7 +44,7 @@ export const Features = () => {
         </div>
       </div>
       <div
-        className={`w-1/2 py-1 px-4 my-5 lg:my-20 h-28 flex justify-center gap-16 items-center bg-white border-4 border-solid border-blue-100 rounded-[30px] duration-300  delay-100 ${
+        className={`w-1/2 py-1 px-4 my-5 lg:my-20 h-28 flex justify-center gap-16 items-center bg-white border-4 border-solid border-blue-100 rounded-[30px] duration-300  delay-200 ${
           hover && "translate-y-32"
         } shadow-xl`}
       >

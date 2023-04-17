@@ -13,7 +13,7 @@ export const Events = () => {
           Events
         </span>
       </div>
-      <div className="flex flex-wrap justify-center w-full gap-20 p-16 bg-black">
+      <div className="flex flex-wrap justify-center w-full gap-20 p-16">
         <Event events={true} />
         <Event events={true} />
         <Event events={true} />
